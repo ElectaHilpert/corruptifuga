@@ -1,0 +1,82 @@
+{
+  "name": "corruptifuga",
+  "description": "Official JS client for ClickHouse DB",
+  "homepage": "https://github.com/ElectaHilpert/corruptifuga.git",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "keywords": [
+    "clickhouse",
+    "cupiditate",
+    "client"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElectaHilpert/corruptifuga.git"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "@types/jasmine": "^4.3.2",
+    "@types/node": "^18.11.18",
+    "@types/sinon": "^10.0.15",
+    "@types/split2": "^3.2.1",
+    "@types/uuid": "^9.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "apache-arrow": "^14.0.1",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.2",
+    "jasmine": "^5.0.0",
+    "jasmine-core": "^5.0.0",
+    "jasmine-expect": "^5.0.0",
+    "karma": "^6.4.2",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-jasmine": "^5.1.0",
+    "karma-sourcemap-loader": "^0.4.0",
+    "karma-typescript": "^5.5.4",
+    "karma-webpack": "^5.0.0",
+    "lint-staged": "^13.1.0",
+    "parquet-wasm": "0.6.0-beta.1",
+    "prettier": "2.8.3",
+    "sinon": "^15.2.0",
+    "split2": "^4.1.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "ts-jest": "^29.1.0",
+    "ts-loader": "^9.4.3",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "tsconfig-paths-webpack-plugin": "^4.0.1",
+    "typescript": "^4.9.4",
+    "uuid": "^9.0.0",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.9.0"
+  },
+  "workspaces": [
+    "./packages/*"
+  ],
+  "files": [
+    "dist"
+  ],
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.json": [
+      "prettier --write"
+    ],
+    "*.yml": [
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  },
+  "author": "NyasiaLehner"
+}
